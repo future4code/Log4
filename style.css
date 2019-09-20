@@ -3,39 +3,33 @@ body{
     padding: 0;
     
 }
-#time{
+#time{          
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-
-
+    grid-template-rows: 1fr 2fr 1fr;                /*grid da primeira area referente ao time*/
 }
-#topTime{
+#topTime{                                       /* Display flex da area de cima com o titulo referente ao time*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#tituloTime{
+#tituloTime{                                /*Titulo do área do time*/
     font-size: 27pt;
     color:#c23949
 }
 #middleTime{
     display: grid;
-    grid-template-columns:  1fr 1fr;
-   
-
-
+    grid-template-columns:  1fr 1fr;   /*grid da segunda area referente ao time*/
 }
-.middleContainer{
+.middleContainer{               
     display: flex;
     flex-direction: column;
     align-items: center;
     border-right-style: inset;
 }
-
-.middleContainer img{
+.middleContainer img{           /*configuração das imagens do container do titulo*/
     max-width:200px;
     max-height:180px;
     width: auto;
@@ -46,12 +40,11 @@ body{
 #clientes{
     width: 100%;
     height: 100vh;
-    background-color: #c0c0c0;
-    
+    background-color: #c0c0c0;    
 }
 .textoMiddle{
     color: black;
-    font-size: 13pt;
+    font-size: 2vh;
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 5px;
@@ -59,7 +52,8 @@ body{
 }
 .textoBottom{
     text-align: center;
-    color: black;
+    color: black;  
+    font-size: 2vh;  
 }
 #bottomTime{
     display: flex;
@@ -79,30 +73,47 @@ body{
     justify-content: center;
 }
 #tituloCliente{
-    font-size: 27pt;
+    font-size: 4vh;
     color: #ffffff;
     text-shadow: 7px 3px 7px #7d7778;
     background-color: #c23949;
     border-radius: 7px;
     padding: 5px;
 }
-
-
 .clientesBottom img{
-    max-width:200px;
-    max-height:180px;
-    width: auto;
-    height: auto;
     background-color: #c23949;
+    width: 15vw;
+    height: 20vh;
+    
 }
 .clientesBottom{
-    display: flex;
-    align-items: normal;
-    justify-content: space-evenly;
-
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 4vw;    
 }
-@media {
-    
-}
+@media (max-width:700px){
+    #clientes{
+        width: 100vw;
+    }
+    #time{
+        width: 100vw;
+    }
+    .clientesBottom img {
+    width: 27vw;
+    height: 23vw;     
+    }
+        
+    div.clientesBottom{
+        padding-top: 60px;
+    }
+    .clientesBottom{
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
 
+    }
+    .textoMiddle{
+        font: 2vh;
+    }
+}
