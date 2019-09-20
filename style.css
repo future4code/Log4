@@ -1,6 +1,74 @@
 body{
     margin: 0;
     padding: 0;
+    font: 112.5%/1.45em sans-serif;
+}
+/*Header */
+header{
+    height: 100vh;;
+    background-color: rgb(194, 57, 73);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim Header */
+/* Menu */
+nav{
+    height: 5vh;
+    display: flex;
+    background-color: rgb(194, 57, 73);
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+/* Fim Menu */
+/* Serviços */
+#servicos{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 30vh 1fr; 
+    height: 95vh;
+    color: rgb(194, 57, 73);
+}
+
+#servicos h2{
+    font-size: 8vh;
+}
+
+#servicos article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    
+}
+
+#servicos article p{
+    background-color: rgb(194, 57, 73);
+    width: 30vw;
+    padding: 5vw;
+    font-size: 4vh;
+    color: white;
+    border-radius: 10px;
+  
+}
+/* Fim Serviços */
+@media (max-width: 500px){
+    #servicos article{
+        grid-template-columns: 1fr;
+    }
+    header img{
+        width: 100vw;
+    }
+    #servicos article p{
+        width: 65vw;
+      
+    }    
 }
 
 #vagas {
