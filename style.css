@@ -2,3 +2,48 @@ body{
     margin: 0;
     padding: 0;
 }
+
+#vagas {
+    background-color: #c0c0c0;
+    color: #c23949;
+    font-size: 3vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sobre_log4 {
+    padding: 20px;
+    padding-right: 300px;
+    flex-basis: 40%;
+}
+
+#form_vagas {
+    flex-basis: 50%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c23949;
+}
+
+input {
+    width: 50%;
+    height: 25px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #c23949;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+    color: aliceblue;
+}
+
+
