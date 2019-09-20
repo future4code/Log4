@@ -3,7 +3,7 @@ body{
     padding: 0;
     
 }
-#serviços{
+#time{
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
@@ -12,16 +12,16 @@ body{
 
 
 }
-#topServiços{
+#topTime{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#tituloServiços{
+#tituloTime{
     font-size: 27pt;
     color:#c23949
 }
-#middleServiços{
+#middleTime{
     display: grid;
     grid-template-columns:  1fr 1fr;
    
@@ -40,9 +40,10 @@ body{
     max-height:180px;
     width: auto;
     height: auto;
+    background-color: #c23949;
     
 }
-#time{
+#clientes{
     width: 100%;
     height: 100vh;
     background-color: #c0c0c0;
@@ -50,16 +51,17 @@ body{
 }
 .textoMiddle{
     color: black;
-    font-size: 12pt;
+    font-size: 13pt;
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 5px;
+    text-align: center;
 }
 .textoBottom{
     text-align: center;
     color: black;
 }
-#bottomServiços{
+#bottomTime{
     display: flex;
     align-items: center;
 }
@@ -67,3 +69,40 @@ body{
     background:#c23949;
     height: 6px;
 }
+#clientes{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+#clientesTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tituloCliente{
+    font-size: 27pt;
+    color: #ffffff;
+    text-shadow: 7px 3px 7px #7d7778;
+    background-color: #c23949;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+.clientesBottom img{
+    max-width:200px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+    background-color: #c23949;
+}
+.clientesBottom{
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+
+    
+}
+@media {
+    
+}
+
