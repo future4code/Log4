@@ -5,9 +5,9 @@ body{
 
 #vagas {
     background-color: #c0c0c0;
-    font: 112.5%/1.45em sans-serif;
     color: #c23949;
-    height: 100vh;
+    font-size: 3vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,11 +25,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #c23949;
 }
 
 input {
+    width: 50%;
     height: 25px;
 }
 
