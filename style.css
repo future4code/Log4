@@ -2,3 +2,45 @@ body{
     margin: 0;
     padding: 0;
 }
+
+#vagas {
+    background-color: #c0c0c0;
+    font: 112.5%/1.45em sans-serif;
+    color: #c23949;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre_log4 {
+    padding-right: 300px;
+    flex-basis: 40%;
+}
+
+#form_vagas {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 500px;
+    height: 25px;
+}
+
+footer {
+    height: 50px;
+    background-color: #c23949;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+    color: aliceblue;
+}
+
+
