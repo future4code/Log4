@@ -1,0 +1,232 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 112.5%/1.45em sans-serif;
+}
+
+#time{          
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;                /*grid da primeira area referente ao time*/
+}
+#topTime{                                       /* Display flex da area de cima com o titulo referente ao time*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tituloTime{                                /*Titulo do área do time*/
+    font-size: 27pt;
+    color:#c23949
+}
+#middleTime{
+    display: grid;
+    grid-template-columns:  1fr 1fr;   /*grid da segunda area referente ao time*/
+}
+.middleContainer{               
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right-style: inset;
+}
+.middleContainer img{           /*configuração das imagens do container do titulo*/
+    max-width:200px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+    background-color: #c23949;
+    
+}
+#clientes{
+    width: 100%;
+    height: 100vh;
+    background-color: #c0c0c0;    
+}
+.textoMiddle{
+    color: black;
+    font-size: 2vh;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: center;
+}
+.textoBottom{
+    text-align: center;
+    color: black;  
+    font-size: 2vh;  
+}
+#bottomTime{
+    display: flex;
+    align-items: center;
+}
+.bordaFinal{
+    background:#c23949;
+    height: 6px;
+}
+#clientes{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+#clientesTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tituloCliente{
+    font-size: 4vh;
+    color: #ffffff;
+    text-shadow: 7px 3px 7px #7d7778;
+    background-color: #c23949;
+    border-radius: 7px;
+    padding: 5px;
+}
+.clientesBottom img{
+    background-color: #c23949;
+    width: 15vw;
+    height: 20vh;
+    
+}
+.clientesBottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 4vw;    
+}
+
+/*Header */
+header{
+    height: 100vh;;
+    background-color: rgb(194, 57, 73);
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim Header */
+/* Menu */
+nav{
+    height: 5vh;
+    display: flex;
+    background-color: rgb(194, 57, 73);
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+/* Fim Menu */
+/* Serviços */
+#servicos{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 30vh 1fr; 
+    height: 95vh;
+    color: rgb(194, 57, 73);
+}
+
+#servicos h2{
+    font-size: 8vh;
+}
+
+#servicos article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vw;
+    
+}
+
+#servicos article p{
+    background-color: rgb(194, 57, 73);
+    width: 30vw;
+    padding: 5vw;
+    font-size: 4vh;
+    color: white;
+    border-radius: 10px;
+  
+}
+/* Fim Serviços */
+@media (max-width:600px){
+    #servicos article{
+        grid-template-columns: 1fr;
+    }
+    header img{
+        width: 100vw;
+    }
+    #servicos article p{
+        width: 65vw;
+      
+    }   
+  
+    #clientes{
+        width: 100vw;
+    }
+    #time{
+        width: 100vw;
+    }
+    .clientesBottom img {
+    width: 27vw;
+    height: 23vw;     
+    }
+        
+    div.clientesBottom{
+        padding-top: 60px;
+    }
+    .clientesBottom{
+        grid-template-columns: 1fr 1fr;
+        gap: 4vw;
+
+    }
+    .textoMiddle{
+        font: 2vh;
+    }
+}
+
+#vagas {
+    background-color: #c0c0c0;
+    color: #c23949;
+    font-size: 3vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sobre_log4 {
+    padding: 20px;
+    padding-right: 300px;
+    flex-basis: 40%;
+}
+
+#form_vagas {
+    flex-basis: 50%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c23949;
+}
+
+input {
+    width: 50%;
+    height: 25px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #c23949;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab {
+    color: aliceblue;
+}
+
+
