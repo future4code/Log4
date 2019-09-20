@@ -8,33 +8,35 @@ body{
     font: 112.5%/1.45em sans-serif;
     color: #c23949;
     height: 100vh;
-    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #sobre_log4 {
+    padding: 20px;
     padding-right: 300px;
     flex-basis: 40%;
 }
 
 #form_vagas {
     flex-basis: 50%;
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #c23949;
 }
 
 input {
-    width: 500px;
     height: 25px;
 }
 
 footer {
-    height: 50px;
+    height: 10vh;
     background-color: #c23949;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 }
